@@ -1,0 +1,37 @@
+{
+  "name": "base-starter",
+  "description": "Base Starter - A Rock Solid, Starter template that includes the Base CSS framework and modules to get you started on your next app or website.",
+  "author": "Matthew Hartman <matthewhartmanau@gmail.com>",
+  "version": "5.0.0",
+  "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "Firefox ESR",
+    "ie >= 10"
+  ],
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@getbase/base": "^5.0.3",
+    "assemble": "^0.3.83",
+    "font-awesome.min.css": "^3.2.1",
+    "grunt": "^0.4.5",
+    "jquery": "^3.6.0",
+    "lightbox2": "^2.11.3",
+    "styles": "^0.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.5"
+  },
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "rm -rf dist && parcel build --no-content-hash src/index.html --public-url ./ --out-dir ./dist",
+    "clean": "rm -rf dist"
+  }
+}
